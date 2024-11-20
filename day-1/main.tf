@@ -3,6 +3,6 @@ resource "aws_instance" "prash" {
   instance_type = var.instance_type
   key_name = var.key_name
   tags = {
-    Name = var.tags
+    Name = "server-1"
   }
 }
