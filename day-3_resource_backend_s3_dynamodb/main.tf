@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "prash" {
-  bucket = "my-terraform-bucket-1"
+  bucket = "my-terraform-bucket-100"
   
 }
 
