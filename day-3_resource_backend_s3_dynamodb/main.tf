@@ -1,11 +1,13 @@
 #creating s3 bucket and dynamo DB for state backend storgae and applying the lock mechanisam for statefile
 
 provider "aws" { 
+  region = "ap-south-1"
 }
+# S3 Bucket for Terraform State
 
 resource "aws_s3_bucket" "prash" {
   bucket = "my-terraform-bucket-100"
-  
+
 }
 
 resource "aws_dynamodb_table" "dynamodb-terraform-state-lock" {
